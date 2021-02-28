@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.Dal.Abstrac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.Dal.Impl", "FootballersTeam.Dal.Impl\FootballersTeam.Dal.Impl.csproj", "{979B488D-FF5A-43A1-95B7-AE0981C3FB6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.MvcClient", "FootballersTeam.MvcClient\FootballersTeam.MvcClient.csproj", "{5AB5BD67-93F6-4EF4-8E3B-6FA591E834E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.WebApi", "FootballersTeam.WebApi\FootballersTeam.WebApi.csproj", "{1AA06042-1194-4015-A25B-16EE0FF82AF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{979B488D-FF5A-43A1-95B7-AE0981C3FB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979B488D-FF5A-43A1-95B7-AE0981C3FB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979B488D-FF5A-43A1-95B7-AE0981C3FB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB5BD67-93F6-4EF4-8E3B-6FA591E834E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB5BD67-93F6-4EF4-8E3B-6FA591E834E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB5BD67-93F6-4EF4-8E3B-6FA591E834E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB5BD67-93F6-4EF4-8E3B-6FA591E834E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

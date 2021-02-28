@@ -8,10 +8,28 @@ namespace FootballProject.Entities
     {
         private readonly int _personId;
         private readonly string _firstName;
+
+        public int PersonId => _personId;
+
+        public string FirstName => _firstName;
+
+        public string MiddleName => _middleName;
+
+        public string Nationality => _nationality;
+
+        public DateTime DataOfBirth => _dataOfBirth;
+
+        public string PlaceOfBirth => _placeOfBirth;
+
         private readonly string _middleName;
         private readonly string _nationality;
         private readonly DateTime _dataOfBirth;
         private readonly string _placeOfBirth;
+
+        protected Person()
+        {
+            
+        }
 
         protected Person(int personId, string firstName, string middleName, string nationality, DateTime dataOfBirth, string placeOfBirth)
         {

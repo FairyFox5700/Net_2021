@@ -10,12 +10,16 @@ namespace FootballProject.Entities
         private readonly int _redCardCount;
         private readonly int _yellowCardCount;
 
-        public Card(int cardId, int redCardCount, int yellowCardCount, FootballResults footballResults)
+        public Card()
+        {
+            
+        }
+
+        public Card(int cardId, int redCardCount, int yellowCardCount,FootballResults footballeResult)
         {
             _cardId = cardId;
             _redCardCount = redCardCount;
             _yellowCardCount = yellowCardCount;
-            FootballResults = footballResults;
         }
 
         public FootballResults FootballResults { get; set; }

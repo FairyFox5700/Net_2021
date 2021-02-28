@@ -3,6 +3,16 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Immediate Window">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../../../Cotton/backend-data-receiver/src/Cotton.BackendDataReceiver.Bl.Abstract/Services/IHubService.cs">
           <value>
             <set />
@@ -44,6 +54,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Program.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/TableParser.cs">
           <value>
             <set />
           </value>
@@ -179,6 +194,96 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/FootballersTeam.Entities/Training.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Configuration/ReportSettings.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/DocumentController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/Values.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/Workbook.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Data/FootballersData.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Helpers/JsonHelpers.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Helpers/ObjectPropertiesHelpers.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Mapper/FootballerMapper.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Models/FootballerViewModel.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Models/PersonViewModel.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Models/WorkbookModel.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Pages/Workbook/Create.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Startup.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Document/Create.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Document/Create.cshtml.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Home/Index.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Workbook/Create.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Workbook/GenerateFromDataSet.cshtml">
           <value>
             <set />
           </value>

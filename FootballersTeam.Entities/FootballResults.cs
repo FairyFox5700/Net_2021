@@ -12,6 +12,10 @@ namespace FootballProject.Entities
         private readonly int _matchId;
         private readonly int _footballerId;
 
+        public FootballResults()
+        {
+            
+        }
         public FootballResults(int resultId, int scoreId, int? cardId, int matchId, int footballerId, Card card, 
             Footballer footballer, Match match, Score score)
         {

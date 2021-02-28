@@ -7,9 +7,23 @@ namespace FootballProject.Entities
 {
     public class Role
     {
-        private readonly string _roleName;
-        private readonly int _roleId;
+        private string _roleName;
 
+        public string RoleName
+        {
+            get => _roleName;
+            set => _roleName = value;
+        }
+
+        public int RoleId => _roleId;
+
+        private int _roleId;
+
+        public Role()
+        {
+            _roleName = "footballer";
+            _roleId = 1;
+        }
         public Role(int roleId, string roleName)
         {
             _roleId = roleId;

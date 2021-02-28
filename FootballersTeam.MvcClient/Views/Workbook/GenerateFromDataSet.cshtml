@@ -1,0 +1,90 @@
+﻿@model WorkbookModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body { padding: 20px; font-size: 0.9rem; }
+        thead tr { text-align: center; }
+        .table th { color: white; background-color: rgb(242, 101, 34); padding: 0.5rem; }
+        .table td { padding: 0.5rem; }
+        .table input { font-size: 0.9rem; padding: 0.3rem 0.35rem; }
+        .first-column { text-align: center; }
+    </style>
+</head>
+<body>
+<form asp-action="GenerateFromDataSet">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <table class="table table-bordered table-condensed">
+        <colgroup>
+            <col style="width: 10%" />
+            <col style="width: 45%" />
+            <col style="width: 45%" />
+        </colgroup>
+        <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].PersonId)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].Height)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].Weight)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].FirstName)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].MiddleName)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].DataOfBirth)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].Nationality)</th>
+            <th>@Html.DisplayNameFor(model=>model.Items[0].PlaceOfBirth)</th>
+        </tr>
+        </thead>
+        <tbody>
+        @for (int i = 0; i < Model.Items.Count; i++)
+        {
+            <tr>
+                <td><input asp-for="Items[i].PersonId" type="text" class="form-control first-column"   readonly /></td>
+                <td><input asp-for="Items[i].Height" type="number" class="form-control" /></td>
+                <td><input asp-for="Items[i].Weight" type="number" class="form-control" /></td>
+                <td><input asp-for="Items[i].FirstName" type="text" class="form-control" /></td>
+                <td><input asp-for="Items[i].MiddleName" type="text" class="form-control" /></td>
+                <td><input asp-for="Items[i].DataOfBirth" type="date" class="form-control" /></td>
+                <td><input asp-for="Items[i].Nationality" type="text" class="form-control" /></td>
+                <td><input asp-for="Items[i].PlaceOfBirth" type="text" class="form-control" /></td>
+                 <td><input asp-for="Items[i].RoleId"   type="hidden"  class="form-control"  /></td>
+                 <td><input asp-for="Items[i].RoleName"   type="hidden"  class="form-control"  /></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+ 
+    <hr />
+    <div>
+        <h4>Output format:</h4>
+        <div class="form-check">
+            <input id="PDF" name="SelectedFormat" type="radio" class="form-check-input" value="PDF" />
+            <label for="PDF" class="form-check-label">PDF</label>
+        </div>
+        <div class="form-check">
+            <input id="XLSX" name="SelectedFormat" type="radio" class="form-check-input" checked value="XLSX" />
+            <label for="XLSX" class="form-check-label">XLSX</label>
+        </div>
+        <div class="form-check">
+            <input id="XLS" name="SelectedFormat" type="radio" class="form-check-input" value="XLS" />
+            <label for="XLS" class="form-check-label">XLS</label>
+        </div>
+        <div class="form-check">
+            <input id="ODS" name="SelectedFormat" type="radio" class="form-check-input" value="ODS" />
+            <label for="ODS" class="form-check-label">ODS</label>
+        </div>
+        <div class="form-check">
+            <input id="CSV" name="SelectedFormat" type="radio" class="form-check-input" value="CSV" />
+            <label for="CSV" class="form-check-label">CSV</label>
+        </div>
+        <div class="form-check">
+            <input id="HTML" name="SelectedFormat" type="radio" class="form-check-input" value="HTML" />
+            <label for="HTML" class="form-check-label">HTML</label>
+        </div>
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-default">Export</button>
+</form>
+</body>
+
