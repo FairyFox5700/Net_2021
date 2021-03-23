@@ -5,7 +5,7 @@ using FootballProject.Entities.Models;
 
 namespace FootballProject.Dal.Abstract.Repositories
 {
-    public interface IFootballersResultRepository<in TKey> where TKey: struct
+    public interface IFootballersResultRepository<in TKey> where TKey : struct
     {
         Task<TotalResultsForMatch> GetTotalResultsForMatchById(TKey matchId);
         Task<TotalResultsForFootballer> GetTotalResultsForPlayerById(TKey playerId);

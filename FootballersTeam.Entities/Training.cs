@@ -25,16 +25,16 @@ namespace FootballProject.Entities
 
         public override string ToString() => GetType().Name;
 
-        ~ Training() => Console.WriteLine($"The {ToString()} destructor is executing.");
+        ~Training() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
         protected Training(Training trainingToCopyFrom)
-        { 
+        {
             _trainingId = trainingToCopyFrom._trainingId;
             _trainingData = trainingToCopyFrom._trainingData;
             _coachId = trainingToCopyFrom._coachId;
             _stadiumId = trainingToCopyFrom._stadiumId;
         }
-        
+
         public Coach Coach
         {
             get => _coach;

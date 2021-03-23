@@ -28,7 +28,7 @@ namespace FootballProject.Entities
 
         protected Person()
         {
-            
+
         }
 
         protected Person(int personId, string firstName, string middleName, string nationality, DateTime dataOfBirth, string placeOfBirth)
@@ -40,13 +40,13 @@ namespace FootballProject.Entities
             _dataOfBirth = dataOfBirth;
             _placeOfBirth = placeOfBirth;
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Person() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
         protected Person(Person personToCopyFrom)
-        { 
+        {
             _personId = personToCopyFrom._personId;
             _firstName = personToCopyFrom._firstName;
             _middleName = personToCopyFrom._middleName;

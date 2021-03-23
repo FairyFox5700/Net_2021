@@ -6,7 +6,7 @@ using FootballProject.Entities.Models;
 
 namespace FootballProject.Dal.Abstract.Repositories
 {
-    public interface IFootballerRepository<in TKey> where TKey: struct
+    public interface IFootballerRepository<in TKey> where TKey : struct
     {
         Task<IEnumerable<Footballer>> GetFootballers();
         Task<IEnumerable<Footballer>> GetFootballersWithRoles();
@@ -17,7 +17,5 @@ namespace FootballProject.Dal.Abstract.Repositories
         Task<int> AddFootballer(FootballerDto footballerToAdd);
         Task<int> UpdateFootballer(int playerId, FootballerDto footballerDto);
         Task<int> DeleteFootballer(TKey footballerId);
-
-
     }
 }

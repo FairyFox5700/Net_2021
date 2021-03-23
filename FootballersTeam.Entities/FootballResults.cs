@@ -14,9 +14,9 @@ namespace FootballProject.Entities
 
         public FootballResults()
         {
-            
+
         }
-        public FootballResults(int resultId, int scoreId, int? cardId, int matchId, int footballerId, Card card, 
+        public FootballResults(int resultId, int scoreId, int? cardId, int matchId, int footballerId, Card card,
             Footballer footballer, Match match, Score score)
         {
             _resultId = resultId;
@@ -34,8 +34,8 @@ namespace FootballProject.Entities
         public Footballer Footballer { get; set; }
         public Match Match { get; set; }
         public Score Score { get; set; }
-        
-        
+
+
         public override string ToString() => GetType().Name;
 
         ~FootballResults() => Console.WriteLine($"The {ToString()} destructor is executing.");
@@ -48,6 +48,6 @@ namespace FootballProject.Entities
             _matchId = footballResultsToCopyFrom._matchId;
             _footballerId = footballResultsToCopyFrom._footballerId;
         }
-       
+
     }
 }

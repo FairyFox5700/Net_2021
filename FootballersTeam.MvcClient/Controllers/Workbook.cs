@@ -13,11 +13,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FootballersTeam.MvcClient.Controllers
 {
-   public class WorkbookController : Controller
+    public class WorkbookController : Controller
     {
         private readonly IMapper<Footballer, FootballerViewModel> _footballerMapper;
 
-        public WorkbookController(IMapper<Footballer,FootballerViewModel> footballerMapper)
+        public WorkbookController(IMapper<Footballer, FootballerViewModel> footballerMapper)
         {
             _footballerMapper = footballerMapper;
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
@@ -29,34 +29,34 @@ namespace FootballersTeam.MvcClient.Controllers
             return View(new WorkbookModel()
             {
                 Items = FootballersData.GetFootballersData()
-                    .Select(e=>_footballerMapper.MapToModel(e))?
+                    .Select(e => _footballerMapper.MapToModel(e))?
                     .ToList(),
-                
+
                 SelectedFormat = "XLSX"
             });
         }
-        
-        
+
+
         [HttpPost, ValidateAntiForgeryToken]
         public IActionResult GenerateFromDataSet(WorkbookModel model)
         {
-            
+
             if (!ModelState.IsValid)
                 return View(model);
-            
+
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("DataTable to Sheet");
-            SetHeaders(worksheet,workbook);
-            RenderFootballersData(worksheet,model);
-            
+            SetHeaders(worksheet, workbook);
+            RenderFootballersData(worksheet, model);
+
             SaveOptions options = GetSaveOptions(model.SelectedFormat);
-            
+
             using var stream = new MemoryStream();
             workbook.Save(stream, options);
             return File(stream.ToArray(), options.ContentType, "Create." + model.SelectedFormat.ToLower());
         }
 
-        private void SetHeaders(ExcelWorksheet worksheet,ExcelFile workbook)
+        private void SetHeaders(ExcelWorksheet worksheet, ExcelFile workbook)
         {
             worksheet.Cells[0, 0].Value = "DataTable insert example:";
             worksheet.Rows["1"].Style = workbook.Styles[BuiltInCellStyleName.Heading1];
@@ -71,7 +71,7 @@ namespace FootballersTeam.MvcClient.Controllers
             worksheet.Cells["I1"].Value = nameof(FootballerViewModel.Weight);
             worksheet.Cells["J1"].Value = nameof(FootballerViewModel.Height);
         }
-        private void RenderFootballersData(ExcelWorksheet worksheet,WorkbookModel model)
+        private void RenderFootballersData(ExcelWorksheet worksheet, WorkbookModel model)
         {
             for (int r = 1; r < model?.Items.Count; r++)
             {
@@ -88,9 +88,9 @@ namespace FootballersTeam.MvcClient.Controllers
                 worksheet.Cells[r, 9].Value = item.Height;
             }
         }
-        
 
-        private  SaveOptions GetSaveOptions(string format)
+
+        private SaveOptions GetSaveOptions(string format)
         {
             switch (format.ToUpper())
             {

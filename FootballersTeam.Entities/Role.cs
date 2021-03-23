@@ -30,13 +30,13 @@ namespace FootballProject.Entities
             _roleName = roleName;
             Footballers = new List<Footballer>();
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Role() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
         protected Role(Role roleToCopyFrom)
-        { 
+        {
             _roleId = roleToCopyFrom._roleId;
             _roleName = roleToCopyFrom._roleName;
         }

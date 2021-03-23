@@ -12,10 +12,10 @@ namespace FootballProject.Entities
 
         public Card()
         {
-            
+
         }
 
-        public Card(int cardId, int redCardCount, int yellowCardCount,FootballResults footballeResult)
+        public Card(int cardId, int redCardCount, int yellowCardCount)
         {
             _cardId = cardId;
             _redCardCount = redCardCount;
@@ -23,11 +23,11 @@ namespace FootballProject.Entities
         }
 
         public FootballResults FootballResults { get; set; }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Card() => Console.WriteLine($"The {ToString()} destructor is executing.");
-        
+
         public Card(Card cardToCopyFrom)
         {
             _cardId = cardToCopyFrom._cardId;

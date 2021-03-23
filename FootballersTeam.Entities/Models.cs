@@ -4,25 +4,25 @@ namespace FootballProject.Entities.Models
 {
     public abstract class FootballTotalResultsResponse
     {
-        public  int RedCardTotalCount { get; set; }
-        public  int YellowCardTotalCount { get; set; }
-        public  int ScoredGoalsTotalCount { get; set; }
-        public  int MissedGoalsTotalCount { get; set; }
+        public int RedCardTotalCount { get; set; }
+        public int YellowCardTotalCount { get; set; }
+        public int ScoredGoalsTotalCount { get; set; }
+        public int MissedGoalsTotalCount { get; set; }
     }
 
-    public class TotalResultsForMatch:FootballTotalResultsResponse
+    public class TotalResultsForMatch : FootballTotalResultsResponse
     {
-        public  int MatchId { get; set; }
-        public  string MatchName { get; set; }
+        public int MatchId { get; set; }
+        public string MatchName { get; set; }
     }
 
-    public class TotalResultsForFootballer:FootballTotalResultsResponse
+    public class TotalResultsForFootballer : FootballTotalResultsResponse
     {
-        public  int PlayerId { get; set; }
-        public  string FirstName { get; set; }
-        public  string MiddleName { get; set; }
+        public int PlayerId { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
     }
-    
+
     public class FootballResultsResponse
     {
         public int ResultId { get; set; }
@@ -35,7 +35,7 @@ namespace FootballProject.Entities.Models
         public int MatchId { get; set; }
         public int FootballerId { get; set; }
     }
-    
+
     public class FootballerDto
     {
         public int PersonId { get; set; }

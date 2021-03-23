@@ -7,7 +7,7 @@ using FootballProject.Entities.Models;
 
 namespace FootballProject.Dal.Impl.Repositories
 {
-    public class FootballerResultsRepository:IFootballersResultRepository<int>
+    public class FootballerResultsRepository : IFootballersResultRepository<int>
     {
         public Task<TotalResultsForMatch> GetTotalResultsForMatchById(int matchId)
         {

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FootballersTeam.MvcClient.Controllers
 {
-      public class DocumentController : Controller
+    public class DocumentController : Controller
     {
         private static readonly SelectListItem[] Countries = CultureInfo.GetCultures(CultureTypes.SpecificCultures)
             .Select(c => new RegionInfo(c.LCID).EnglishName)

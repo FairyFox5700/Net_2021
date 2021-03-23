@@ -20,13 +20,13 @@ namespace FootballProject.Entities
             _club = club;
             _sponsor = sponsor;
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~SponsoredClubs() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
         protected SponsoredClubs(SponsoredClubs sponsoredClubsToCopyFrom)
-        { 
+        {
             _sponsorClubId = sponsoredClubsToCopyFrom._sponsorClubId;
             _clubId = sponsoredClubsToCopyFrom._clubId;
             _sponsorId = sponsoredClubsToCopyFrom._sponsorId;

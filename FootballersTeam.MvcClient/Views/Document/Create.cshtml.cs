@@ -6,7 +6,7 @@ namespace FootballersTeam.MvcClient.Views.Document
     {
         public void OnGet()
         {
-            
+
         }
     }
 }

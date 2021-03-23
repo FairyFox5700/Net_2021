@@ -5,14 +5,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FootballProject.Entities
 {
-    public class Coach:Person
+    public class Coach : Person
     {
         private readonly int _countOfVictories;
         private readonly int _yearsOfExperience;
         private readonly int _clubId;
 
+        public Coach()
+        {
+
+        }
         public Coach(int personId, string firstName, string middleName, string nationality, DateTime dataOfBirth,
-            string placeOfBirth, int countOfVictories, int yearsOfExperience, int clubId) 
+            string placeOfBirth, int countOfVictories, int yearsOfExperience, int clubId)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
             _countOfVictories = countOfVictories;
@@ -22,21 +26,21 @@ namespace FootballProject.Entities
             Trainings = new List<Training>();
         }
 
-        public  ICollection<FootballClub> FootballClubs  { get; set; }
+        public ICollection<FootballClub> FootballClubs { get; set; }
         public ICollection<Training> Trainings { get; set; }
 
-        public Coach(int personId, string firstName, string middleName, string nationality, 
-            DateTime dataOfBirth, string placeOfBirth) 
+        public Coach(int personId, string firstName, string middleName, string nationality,
+            DateTime dataOfBirth, string placeOfBirth)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Coach() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
-        public Coach(Coach coachToCopyFrom,int personId, string firstName, string middleName, string nationality, 
-            DateTime dataOfBirth, string placeOfBirth) 
+        public Coach(Coach coachToCopyFrom, int personId, string firstName, string middleName, string nationality,
+            DateTime dataOfBirth, string placeOfBirth)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
             _countOfVictories = coachToCopyFrom._countOfVictories;

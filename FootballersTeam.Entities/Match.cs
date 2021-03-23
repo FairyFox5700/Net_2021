@@ -29,13 +29,13 @@ namespace FootballProject.Entities
             _stadium = stadium ?? throw new ArgumentNullException(nameof(stadium));
             _footballResults = footballResults ?? throw new ArgumentNullException(nameof(footballResults));
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Match() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
         public Match(Match matchToCopyFrom)
-        { 
+        {
             _matchId = matchToCopyFrom._matchId;
             _matchName = matchToCopyFrom._matchName;
             _ticketPrice = matchToCopyFrom._ticketPrice;

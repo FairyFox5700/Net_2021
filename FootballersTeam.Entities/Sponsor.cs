@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FootballProject.Entities
 {
-    public class Sponsor:Person
+    public class Sponsor : Person
     {
         private readonly string _sponsorshipKind;
         private readonly decimal _sponsorshipSum;
@@ -19,20 +19,24 @@ namespace FootballProject.Entities
             _sponsorshipSum = sponsorshipSum;
         }
 
-        public  ICollection<SponsoredClubs> SponsoresClubs { get; set; }
+        public Sponsor()
+        {
+
+        }
+        public ICollection<SponsoredClubs> SponsoresClubs { get; set; }
 
         public Sponsor(int personId, string firstName, string middleName,
-            string nationality, DateTime dataOfBirth, string placeOfBirth) 
+            string nationality, DateTime dataOfBirth, string placeOfBirth)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Sponsor() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
-        public Sponsor(Sponsor sponsorToCopyFrom,int personId, string firstName, string middleName, string nationality, 
-            DateTime dataOfBirth, string placeOfBirth) 
+        public Sponsor(Sponsor sponsorToCopyFrom, int personId, string firstName, string middleName, string nationality,
+            DateTime dataOfBirth, string placeOfBirth)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
             _sponsorshipKind = sponsorToCopyFrom._sponsorshipKind;

@@ -208,6 +208,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/HomeController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/ScoresController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Controllers/Values.cs">
           <value>
             <set />

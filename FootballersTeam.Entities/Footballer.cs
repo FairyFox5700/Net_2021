@@ -7,11 +7,11 @@ using System.IO.Pipes;
 
 namespace FootballProject.Entities
 {
-    public class Footballer:Person
+    public class Footballer : Person
     {
         private static int _counter;
         private decimal _height;
-        private  decimal _weight;
+        private decimal _weight;
         private readonly int? _roleId;
 
         public decimal Height
@@ -33,36 +33,37 @@ namespace FootballProject.Entities
 
         public Footballer()
         {
-            
+
         }
-        public Footballer( string firstName, string middleName, string nationality, 
-            DateTime dataOfBirth, string placeOfBirth, decimal height, decimal weight, Role role) : 
+        public Footballer(string firstName, string middleName, string nationality,
+            DateTime dataOfBirth, string placeOfBirth, decimal height, decimal weight, Role role) :
             base(_counter++, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
             _height = height;
             _weight = weight;
             Role = role ?? throw new ArgumentNullException(nameof(role));
-            FootballResults =new List<FootballResults>();
+            FootballResults = new List<FootballResults>();
         }
-        
 
-        public Footballer(int personId, string firstName, string middleName, 
-            string nationality, DateTime dataOfBirth, string placeOfBirth) 
+
+        public Footballer(int personId, string firstName, string middleName,
+            string nationality, DateTime dataOfBirth, string placeOfBirth)
             : base(personId, firstName, middleName, nationality, dataOfBirth, placeOfBirth)
         {
-            
+
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Footballer() => Console.WriteLine($"The {ToString()} destructor is executing.");
 
-        public Footballer(Footballer footballerToCopyFrom): base(footballerToCopyFrom)
+        public Footballer(Footballer footballerToCopyFrom) : base(footballerToCopyFrom)
         {
             _height = footballerToCopyFrom._height;
             _weight = footballerToCopyFrom._weight;
             _roleId = footballerToCopyFrom._roleId;
         }
-        
+
+
     }
 }

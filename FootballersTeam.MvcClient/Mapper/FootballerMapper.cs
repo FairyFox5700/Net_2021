@@ -9,7 +9,7 @@ namespace FootballersTeam.MvcClient.Mapper
     {
         TModel MapToModel(TEntity ent);
     }
-    public class FootballerMapper:IMapper<Footballer,FootballerViewModel>
+    public class FootballerMapper : IMapper<Footballer, FootballerViewModel>
     {
         public FootballerViewModel MapToModel(Footballer ent)
         {

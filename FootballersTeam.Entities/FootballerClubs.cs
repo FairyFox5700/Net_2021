@@ -19,8 +19,8 @@ namespace FootballProject.Entities
 
         public FootballerClubs(int footballerClubId, int personId, string firstName,
             string middleName, string nationality,
-            DateTime dataOfBirth, string placeOfBirth, 
-            string footballerClubName, int clubId, 
+            DateTime dataOfBirth, string placeOfBirth,
+            string footballerClubName, int clubId,
             int playerId, FootballClub club, Footballer player)
         {
             _footballerClubId = footballerClubId;
@@ -39,7 +39,7 @@ namespace FootballProject.Entities
 
         public FootballClub Club { get; set; }
         public Footballer Player { get; set; }
-        
+
         public override string ToString() => GetType().Name;
 
         ~FootballerClubs() => Console.WriteLine($"The {ToString()} destructor is executing.");

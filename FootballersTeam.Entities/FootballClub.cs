@@ -10,6 +10,10 @@ namespace FootballProject.Entities
         private readonly int _footballClubId;
         private string _footballClubName;
 
+        public FootballClub()
+        {
+
+        }
         public FootballClub(int footballClubId, string footballClubName)
         {
             _footballClubId = footballClubId;

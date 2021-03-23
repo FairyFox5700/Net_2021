@@ -12,7 +12,7 @@ namespace FootballProject.Entities
         private readonly int _clubId;
         private readonly FootballClub _club;
 
-        public Logo(int logoId, string imageName, int clubId, FootballClub club,byte[] image=null)
+        public Logo(int logoId, string imageName, int clubId, FootballClub club, byte[] image = null)
         {
             _logoId = logoId;
             _image = image;
@@ -20,7 +20,7 @@ namespace FootballProject.Entities
             _clubId = clubId;
             _club = club ?? throw new ArgumentNullException(nameof(club));
         }
-        
+
         public override string ToString() => GetType().Name;
 
         ~Logo() => Console.WriteLine($"The {ToString()} destructor is executing.");

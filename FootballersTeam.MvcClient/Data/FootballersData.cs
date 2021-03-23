@@ -6,7 +6,7 @@ namespace FootballersTeam.MvcClient.Data
 {
     public static class FootballersData
     {
-        public static List<Footballer> GetFootballersData() 
+        public static List<Footballer> GetFootballersData()
         {
             //initialisation with default constructor
             var defaultRole = new Role();
@@ -38,10 +38,10 @@ namespace FootballersTeam.MvcClient.Data
             var fourteenthFootballer = new Footballer(fourthFootballer);
             var fifteenthFootballer = new Footballer(fifthFootballer);
             //setting data with properties
-            var goalkeeperRole = new Role(2,"goalkeeper");
+            var goalkeeperRole = new Role(2, "goalkeeper");
             eleventhFootballer.Role = goalkeeperRole;
             twelfthFootballer.Role = goalkeeperRole;
-            var defenderRole = new Role(2,"defender");
+            var defenderRole = new Role(2, "defender");
             thirteenthFootballer.Role = defaultRole;
             fourteenthFootballer.Role = defenderRole;
             fifteenthFootballer.Role = defenderRole;

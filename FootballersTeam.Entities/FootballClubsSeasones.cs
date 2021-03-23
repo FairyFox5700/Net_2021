@@ -10,6 +10,10 @@ namespace FootballProject.Entities
         private int _footballClubsSeasonId;
         private int _seasonId;
 
+        public FootballClubsSeasons()
+        {
+
+        }
         public FootballClubsSeasons(int footballClubsSeasonId, int? clubId, int seasonId, FootballClub club, Season season)
         {
             _footballClubsSeasonId = footballClubsSeasonId;
