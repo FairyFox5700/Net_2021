@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Something strange</title>
+<link rel="stylesheet" type="text/css" href="../src/colors.css">
+<link rel="stylesheet" type="text/css" href="../src/root.css"> 
+<script type="text/javascript" src="../src/script.js"></script>
+</head>
+<body> 
+    <div class="wrapper">
+        <div class="header">
+            <h2>
+                Звіти з лабораторних робіт
+            </h2>
+            <h2>
+                з дисципліни 
+                <span class="title">Технології .Net розробки веб-додатків</span>
+            </h2>
+            <h2>
+            студентки групи ІТ-81 Тищенко Ірини Володимирівни
+            </h2>
+        </div>
+        <div class="topbar flex horizontal-alignment">
+            <a class="topbar-item shadow" href="../index.html">Title</a>
+            <a class="topbar-item shadow" href="1.html">Lab 1</a>
+            <a class="topbar-item shadow " href="2.html">Lab 2</a>
+            <a class="topbar-item shadow active " href="3.html">Lab 3</a>
+            <a class="topbar-item shadow" href="4.html">Lab 4</a>
+            <a class="topbar-item shadow" href="5.html">Lab 5</a>
+            <a class="topbar-item shadow" href="6.html">Lab 6</a>
+            <a class="topbar-item shadow" href="7.html">Lab 7</a>
+            <a class="topbar-item shadow" href="8.html">Lab 8</a>
+            <a class="topbar-item shadow" href="9.html">Lab 9</a>
+        </div>
+        <div class="main">
+            <div id="menu">
+                <div class="dropdown">
+                    <a class="menu-item flex " onclick="ChangeTab(this, '1')">1 Тема, мета та постановка задачі лабораторної роботи №3.</a>
+                </div>
+                <div class="dropdown">
+                    <a class="menu-item flex " onclick="ChangeTab(this, '2')">2 Місце розташування проекту.Середовище розробки</a>
+                </div>
+
+                <div class="dropdown">
+                     <a class="menu-item flex " onclick="ChangeTab(this, '3')">3 Класи з описом властивостей та закритих полів</a>
+                </div>
+
+                 <div class="dropdown">
+                    <a class="menu-item flex">4 Проектування струтктури ПЗ </a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '4')">4.1  Проектування структури ПЗ  - UML-діаграма класів</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="menu-item flex">5. Кодування (програмування)  </a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '5')">5.1 Файлова структура проекту</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '6')">5.2 Програмний код всіх файлів</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="menu-item flex">6. Впровадження та супроводження ПЗ</a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '7')">6.1. Папка з проектом</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '8')">6.2. Запуск ехе-файла</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                     <a class="menu-item flex " onclick="ChangeTab(this, '9')">7 Висновки</a>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div id="1" class="active-item">
+                    <p><b>Тема: ВИКОРИСТАННЯ ВЛАСТИВОСТЕЙ.&nbsp; АВТОМАТИЧНІ ВЛАСТИВОСТІ.</b></p>
+<p><b>СКОРОЧЕНИЙ ЗАПИС ВЛАСТИВОСТЕЙ</b></p>
+<p></p>
+<p><b>Мета</b><span style="font-weight: 400;">: Здійснити введення та виведення даних закритих полів класів, застосовуючі методи-властивості.</span></p>
+<p></p>
+<p><b>Постановка задачі:</b></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Доповнити програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів</span><span style="font-weight: 400;"><br /><br /></span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">&nbsp;&nbsp;Протестувати програму, шляхом запуску програми, введенням та виведенням значень закритих полів.</span></li>
+</ol>
+                </div>
+
+                <div id="2" class="item">
+                    <head>Місце розташування проекту.Середовище розробки</head>
+                    <p>Місце розташування проекту.</p>
+                    <a href="https://github.com/FairyFox5700/Net_2021" />
+                    <p>Середовище розробки : Rider</p>
+                </div>
+
+                <div id="3" class="item">3 Класи з описом властивостей та закритих полів
+                  <head>Таблиця класів<head>
+                    <img src="../src/img/lab3_classses.png" width="80%" height="80%" />
+                </div>
+                <div id="4" class="item">
+                 <head>Проектування структури ПЗ  - UML-діаграма класів</head>
+                    <img src="../src/img/bd_footballer_teams-Page-5.jpg" width="80%" height="80%" />
+                </div>
+
+                    <div id="5" class="item">
+                 <head>5.1 Файлова структура проекту</head>
+                    <p> Файлова структура проекту </p>
+                    <img src="../src/img/solution_lab2.png" width="80%" height="80%" />
+                </div>
+                     <div id="6" class="item">
+                 <head>Програмний код всіх файлів</head>
+                    <p>Використання</p>
+                    <img src="../src/img/lab3_init.png" width="80%" height="80%" />
+                    <p>Автоматичні properties </p>
+                    <img src="../src/img/lab3_auto_properies.png" width="80%" height="80%" />
+                    <p>Загальна форма </p>
+                    <img src="../src/img/lab3_general_get_set.png" width="80%" height="80%" />
+                    <p>Запис з первірками </p>
+                    <img src="../src/img/lab3_get_set_with_cond.png" width="80%" height="80%" />
+                    <p>Результат </p>
+                    <img src="../src/img/lab3_result.png" width="80%" height="80%" />
+                </div>
+                 <div id="7"
+                      <a href="https://drive.google.com/file/d/1tsKHjyBlvUbZEKX2MfLsTZMEXySVDsJp/view?usp=sharing">Файл проекту</a>
+                </div>
+                <div id="8" class="item">
+                       <a href="https://drive.google.com/file/d/1BBKXhB-yDHB2sg2oZd91u-xQ7I74aYJh/view?usp=sharing">EXE файл</a>
+                </div>
+               <div id="9" class="item">
+                        <p>
+                            Висновок: в ході виконання даної лаборатоної роботи я навчилась створювати та використовувати аксесори а також задавати їм модифікатори доступу. Таким чином властивості надають зручний і раціональний спосіб до полів моделі, а також забезпечуть інкапсуляцію. 
+                           <p><b>Використання властивостей в класах дає наступні переваги:</b></p>
+
+                           <p>забезпечується більш раціональний  доступ до внутрішніх змінних класу; </p>
+                           <p>в коді аксессор можна реалізувати різного роду перевірки на допустимість внутрішніх значень для полів класу;</p>
+                           <p>гнучкість в правах доступу до внутрішньої моделі: відсутність аксесора дозволяє реалізувати доступ «тільки для читання» до внутрішніх даних класу. Це, в свою чергу, унеможливлює виконання довільного змінення цих даних</p>
+                        </p>
+                        
+    
+            </div>
+        </div>
+        <div class="footer"></div>
+</html>
