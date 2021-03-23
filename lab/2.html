@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Something strange</title>
+<link rel="stylesheet" type="text/css" href="../src/colors.css">
+<link rel="stylesheet" type="text/css" href="../src/root.css"> 
+<script type="text/javascript" src="../src/script.js"></script>
+</head>
+<body> 
+	<div class="wrapper">
+		<div class="header">
+            <h2>
+                Звіти з лабораторних робіт
+            </h2>
+            <h2>
+                з дисципліни 
+                <span class="title">Технології .Net розробки веб-додатків</span>
+            </h2>
+            <h2>
+            студентки групи ІТ-81 Тищенко Ірини Володимирівни
+            </h2>
+        </div>
+		<div class="topbar flex horizontal-alignment">
+			<a class="topbar-item shadow" href="../index.html">Title</a>
+			<a class="topbar-item shadow" href="1.html">Lab 1</a>
+			<a class="topbar-item shadow active" href="2.html">Lab 2</a>
+			<a class="topbar-item shadow" href="3.html">Lab 3</a>
+			<a class="topbar-item shadow" href="4.html">Lab 4</a>
+			<a class="topbar-item shadow" href="5.html">Lab 5</a>
+			<a class="topbar-item shadow" href="6.html">Lab 6</a>
+			<a class="topbar-item shadow" href="7.html">Lab 7</a>
+			<a class="topbar-item shadow" href="8.html">Lab 8</a>
+			<a class="topbar-item shadow" href="9.html">Lab 9</a>
+		</div>
+		<div class="main">
+            <div id="menu">
+            	<div class="dropdown">
+                	<a class="menu-item flex " onclick="ChangeTab(this, '1')">1 Тема, мета та постановка задачі лабораторної роботи №2.</a>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">2 Проектування ПЗ</a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">2.1  Проектування структури ПЗ  - UML-діаграма класів</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">2.2  Таблиця класів</a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">3. Кодування (програмування)  </a>
+               	 	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">3.1 Файлова структура проекту</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '5')">3.2    Програмні коди класів з конструкторами</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '6')">3.3 Програмний код класу Program</a>
+               		</div>
+                </div>
+                <div class="dropdown">
+                	<a class="menu-item flex">4. Впровадження та супроводження ПЗ</a>
+               	  	<div class="submenu">
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">5.1. Папка з проектом</a>
+                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.2. Запуск ехе-файла</a>
+               		</div>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div id="1" class="active-item">
+                    <p><strong><span>Тема: </span></strong><strong>КОНСТРУКТОРИ.МОДИФИКАТОРЫ ДОСТУПУ В C# И UML. ДІАГРАМИ КЛАСІВ. <span>ВІДНОШЕННЯ МІЖ КЛАСАМИ</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong>Мета</strong>: <span>Здійснити об&rsquo;єктно-орієнтоване проектування</span> з урахуванням модифікаторів доступу <span>в </span><span>C# и UML і</span> добавлення конструкторів у діаграму класів та реалізація їх у програмному коді. <span>В</span><span>ивчити особливості використання різних видів конструкторів. Доповнити програму конструкторами різних видів.</span></p>
+<p>&nbsp;</p>
+<p><strong>Постановка задачі:</strong></p>
+<ol>
+<li><span>Доповнити інтерфейси та реалізації класів методами-конструкторами класів (використати конструктори по умовчанню, ініціалізації (введення значень з клавіатури, завдання їх за виразами та через виклик інших методів-членів класу). </span></li>
+<li><span> </span><span>Протестувати програму, демонструючи послідовність викликів конструкторів виведенням на екран повідомлень про створення об&rsquo;єктів</span></li>
+<li><span> </span><span>Продемонструвати створення об&rsquo;єктів за допомогою різних видів конструкторів: </span></li>
+</ol>
+<p><span>3.1. через ініціалізацію значень атрибутів класів списком аргументів, використовуючи конструктор ініціалізації;</span></p>
+<p><span>3.2. через присвоєння одних об&rsquo;єктів іншим того самого типу, використовуючи конструктор копіювання;</span></p>
+<p><span>3.3. створення об&rsquo;єкта за допомогою конструктора за замовчуванням.</span></p>
+<p><span>&nbsp;</span></p>
+
+                </div>
+                <div id="2" class="item">
+                    <head>UML-діаграма класів проекту<head>
+                    <img src="../src/img/bd_footballer_teams-class_fiagram_lab_2.jpg" width="80%" height="80%" />
+                </div>
+                <div id="3" class="item">Таблиця класів
+                  <head>Таблиця класів<head>
+                    <img src="../src/img/functions_and_attributes.png" width="80%" height="80%" />
+                </div>
+                <div id="4" class="item">
+                 <head>Файлова структура проекту<head>
+                    <img src="../src/img/solution_lab2.png" width="80%" height="80%" />
+                </div>
+                    <div id="5" class="item">
+                 <head>Програмні коди класів з конструкторами<head>
+                    <p>Інтерфейс класу IFootballerRepository </p>
+                    <img src="../src/img/interfac1.png" width="80%" height="80%" />
+                    <br/>
+                    <p>Інтерфейс класу IFootballersResultRepository </p>
+                    <img src="../src/img/interface2.png" width="80%" height="80%" />
+                    <br/>
+                     <p>Інтерфейс класу Footballer </p>
+                    <img src="../src/img/footballer1.png" width="80%" height="80%" />
+                    <img src="../src/img/footballer2.png" width="80%" height="80%" />
+                    <img src="../src/img/footballer3.png" width="80%" height="80%" />
+                     <br/>
+                     <p>Інтерфейс класу Coach </p>
+                     <img src="../src/img/caoch1.png" width="80%" height="80%" />
+                     <img src="../src/img/coach2.png" width="80%" height="80%" />
+                     <br/>
+                </div>
+                 <div id="6" class="item">Програмний код класу Program. Виведення результатів виконання
+                    <p>Виведення таблиці футболістів</p>
+                    <img src="../src/img/footballer_view.png" width="80%" height="80%" />
+                    <br/>
+                    <p>Виведення таблиці футболістів в форматі pdf</p>
+                    <img src="../src/img/footballer_view2.png" width="80%" height="80%" />
+                </div>
+         
+               <div id="7" class="item">
+                        <p>
+                            Висновок: в ході виконання даної лаборатоної роботи я навчилась виконувати детальний опис предметного середовища, формулювати мету розробки проекту, бізнес-задачі, бізнес-процеси, сценарій дій системи.
+Здійснила об’єктно-орієнтовний аналіз та проектування. А також ознайомилась та застосувала на практиці інкапсуляцію,познайомилась з поняттями класів, екземплярів класу. Провела об'єктно-орієнтовний аналіз та проектування програми. Також викорситала для проектування графічне подання у вигляді діаграми класів, варіантів використання  та діаграми об'єктів. А також конструювати класи за допомогою різних конструкторів.
+</p>
+                        
+                    <a href="https://drive.google.com/file/d/1tsKHjyBlvUbZEKX2MfLsTZMEXySVDsJp/view?usp=sharing">Файл проекту</a>
+                </div>
+                <div id="8" class="item">
+                       <a href="https://drive.google.com/file/d/1BBKXhB-yDHB2sg2oZd91u-xQ7I74aYJh/view?usp=sharing">EXE файл</a>
+                </div>
+            </div>
+        </div>
+		<div class="footer"></div>
+</html>

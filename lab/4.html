@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Something strange</title>
+<link rel="stylesheet" type="text/css" href="../src/colors.css">
+<link rel="stylesheet" type="text/css" href="../src/root.css"> 
+<script type="text/javascript" src="../src/script.js"></script>
+</head>
+<body> 
+    <div class="wrapper">
+        <div class="header">
+            <h2>
+                Звіти з лабораторних робіт
+            </h2>
+            <h2>
+                з дисципліни 
+                <span class="title">Технології .Net розробки веб-додатків</span>
+            </h2>
+            <h2>
+            студентки групи ІТ-81 Тищенко Ірини Володимирівни
+            </h2>
+        </div>
+        <div class="topbar flex horizontal-alignment">
+            <a class="topbar-item shadow" href="../index.html">Title</a>
+            <a class="topbar-item shadow" href="1.html">Lab 1</a>
+            <a class="topbar-item shadow " href="2.html">Lab 2</a>
+            <a class="topbar-item shadow" href="3.html">Lab 3</a>
+            <a class="topbar-item shadow active" href="4.html">Lab 4</a>
+            <a class="topbar-item shadow" href="5.html">Lab 5</a>
+            <a class="topbar-item shadow" href="6.html">Lab 6</a>
+            <a class="topbar-item shadow" href="7.html">Lab 7</a>
+            <a class="topbar-item shadow" href="8.html">Lab 8</a>
+            <a class="topbar-item shadow" href="9.html">Lab 9</a>
+        </div>
+        <div class="main">
+            <div id="menu">
+                <div class="dropdown">
+                    <a class="menu-item flex " onclick="ChangeTab(this, '1')">1 Тема, мета та постановка задачі лабораторної роботи №4.</a>
+                </div>
+                 <div class="dropdown">
+                    <a class="menu-item flex " onclick="ChangeTab(this, '2')">2 Місце розташування проекту.Середовище розробки</a>
+                </div>
+
+               <div class="dropdown">
+                    <a class="menu-item flex">3. Проектування струтктури ПЗ </a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '3')"> 3.Проектування структури ПЗ  - UML-діаграма класів</a>
+                    </div>
+                </div>
+ <div class="dropdown">
+                    <a class="menu-item flex">4. Кодування ПЗ (програмування)  </a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '4')">4.1 Перевантаження унарних операторів</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '5')">4.2 Перевантаження бінарних операторів</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '6')">4.3 Перевантаження логічних операторів та операторів порівняння</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '7')">4.4 Файлова структура проекту</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
+                    <div class="submenu">
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '8')">5.1. Папка з проектом</a>
+                        <a class="submenu-item flex" onclick="ChangeTab(this, '9')">5.2. Запуск ехе-файла</a>
+                    </div>
+                </div>
+                  <div class="dropdown">
+                     <a class="menu-item flex " onclick="ChangeTab(this, '10')">6  Висновки</a>
+                </div>
+            </div>
+    
+            <div id="content">
+                <div id="1" class="active-item">
+                    <p><b>Тема: ПЕРЕВАНТАЖЕННЯ УНАРНИХ, БІНАРНИХ, ЛОГІЧНИХ ОПЕРАТОРІВ,ОПЕРАТОРІВ ПОРІВНЯННЯ</b></p>
+<p></p>
+<p><b>Мета</b><span style="font-weight: 400;">: придбати практичні навички роботи&nbsp; реалізації методів перевантаження унарних, бінарних, логічних операторів, операторів порівняння.</span></p>
+<p></p>
+<p><b>Постановка задачі:</b></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Доповнити програмну реалізацію класів методами для перевантаження унарних, бінарних, логічних операторів, операторів порівняння.</span></li>
+</ol>
+<p></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">&nbsp;&nbsp;Протестувати програму. Зробити висновки.</span></li>
+</ol>
+<hr/>
+<b> <p>Визначимо оператори порівняння для класу Score. Це сутність що відображає кількість забитих та пропущених голів. Тому ми можемо застосвувати оператори порівняння для 2 сутностей  для виконання спеціальної визначеної логіки.</p>
+    <p>В даному випадку оператори унарні та бінарні додавання будуть сумувати кількість забитих та пропущених голів для 2 сутностей з класу Score. 
+    Виконання логічних операцій дозволить порівнювати швидко дві сутності таблиці Score зручно застосувавши лише оператори <, <=, ==, !=, >=,>.</p>
+</p>
+                </div>
+
+                  <div id="2" class="item">
+                    <head>Місце розташування проекту.Середовище розробки</head>
+                    <p>Місце розташування проекту.</p>
+                    <a href="https://github.com/FairyFox5700/Net_2021" />
+                    <p>Середовище розробки : Rider</p>
+                </div>
+
+
+                <div id="3" class="item">
+                 <head>Проектування структури ПЗ  - UML-діаграма класів</head>
+                    <img src="../src/img/bd_footballer_teams-Page-5.jpg" width="80%" height="80%" />
+                </div>
+
+                <div id="3" class="item">Таблиця класів
+                  <head>Таблиця класів</head>
+                    <img src="../src/img/functions_and_attributes.png" width="80%" height="80%" />
+                </div>
+
+                <div id="4" class="item">
+                 <head>4.1 Перевантаження унарних операторів</head>
+                    <img src="../src/img/lab4_un_bin_code.png" width="80%" height="80%" />
+                </div>
+
+                <div id="5" class="item">
+                 <head>4.2 Перевантаження бінарних операторів</head>
+                    <img src="../src/img/lab4_binary_op.png" width="80%" height="80%" />
+                </div>
+
+                <div id="6" class="item">
+                 <head>4.3 Перевантаження логічних операторів та операторів порівняння</head>
+                    <img src="../src/img/lab4_equlity_code.png" width="80%" height="80%" />
+                    <hr/>
+                    <img src="../src/img/lab4_cond_and_comp_results.png" width="80%" height="80%" />
+                </div>
+
+                <div id="7" class="item">
+                 <head>4.4 Файлова структура проекту</head>
+                    <img src="../src/img/solution_lab2.png" width="80%" height="80%" />
+                    <p></p>
+                     <img src="../src/img/lab4_console.png" width="80%" height="80%" />
+                     <img src="../src/img/lab4_un_result.png" width="80%" height="80%" />
+                     <img src="../src/img/lab4_cond_and_comp_results.png" width="80%" height="80%" />
+                </div>
+
+                
+                 <div id="8"
+                      <a href="https://drive.google.com/file/d/1tsKHjyBlvUbZEKX2MfLsTZMEXySVDsJp/view?usp=sharing">Файл проекту</a>
+                </div>
+                <div id="9" class="item">
+                       <a href="https://drive.google.com/file/d/1BBKXhB-yDHB2sg2oZd91u-xQ7I74aYJh/view?usp=sharing">EXE файл</a>
+                </div>
+
+                
+
+               <div id="10" class="item">
+                        <p>
+                            Висновок: в ході виконання даної лаборатоної роботи я придбала  практичні навички роботи  реалізації методів перевантаження унарних, бінарних, логічних операторів, операторів порівняння.
+
+                            <p>Іноді порівняння двох об'єктів не так просто, як порівняння двох чисел - для цього C # дозволяє писати свої власні, призначені для користувача методи для виконання таких речей, як порівняння. C # надає можливість будувати спеціальні класи і структури, які також унікально реагують на один і той ж набір базових лексем (на кшталт операції +)</p>
+
+                             <p> Перевантаження оператора в основному є механізмом надання особливого значення звичайному логічному оператору C # для  визначеного  користувачем типу даних, таких як структури або класи.</p>
+ <p>Причиною того, що розробники зазвичай додають оператори до власних типів або класів, є забезпечення сумісності з операторами, які вже працюють із вбудованими типами. Інша причина полягає в тому, що, можливо, ви захочете надати подібну функціональність  вбудованим операторам.</p>
+</p>
+
+                        
+    
+            </div>
+      
+        </div>
+        <div class="footer"></div>
+</html>
