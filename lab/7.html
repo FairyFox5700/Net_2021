@@ -1,106 +1,358 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-<head> 
-<meta charset="UTF-8"> 
-<title>Something strange</title>
-<link rel="stylesheet" type="text/css" href="../src/colors.css">
-<link rel="stylesheet" type="text/css" href="../src/root.css"> 
-<script type="text/javascript" src="../src/script.js"></script>
-</head>
-<body> 
-	<div class="wrapper">
-		<div class="header">
-            <h2>
-                Звіти з лабораторних робіт
-            </h2>
-            <h2>
-                з дисципліни 
-                <span class="title">Технології .Net розробки веб-додатків</span>
-            </h2>
-            <h2>
-            студентки групи ІТ-81 Тищенко Ірини Володимирівни
-            </h2>
-        </div>
-		<div class="topbar flex horizontal-alignment">
-			<a class="topbar-item shadow" href="../index.html">Title</a>
-			<a class="topbar-item shadow" href="1.html">Lab 1</a>
-			<a class="topbar-item shadow" href="2.html">Lab 2</a>
-			<a class="topbar-item shadow" href="3.html">Lab 3</a>
-			<a class="topbar-item shadow" href="4.html">Lab 4</a>
-			<a class="topbar-item shadow" href="5.html">Lab 5</a>
-			<a class="topbar-item shadow" href="6.html">Lab 6</a>
-			<a class="topbar-item shadow active" href="7.html">Lab 7</a>
-			<a class="topbar-item shadow" href="8.html">Lab 8</a>
-			<a class="topbar-item shadow" href="9.html">Lab 9</a>
-		</div>
-		<div class="main">
-            <div id="menu">
-            	<div class="dropdown">
-                	<a class="menu-item flex">1. Характеристика об’єкта автоматизації</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex active-link" onclick="ChangeTab(this, '1')">1.1. Опис об'єкта управління</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">1.2. Мета розробки проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '3')">1.3. Бізнес-задачі</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '4')">1.4. Бізнес-процеси</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '5')">1.5. Сценарії дій системи</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">2. Об’єктно-орієнтована декомпозиції  предметного середовища</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '6')">2.1. Таблиця обґрунтування класів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '7')">2.2. Таблиця обґрунтування методів</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '8')">2.3. Об'єкто-орієнтована декомпозиція предметного середовища</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '9')">2.4. Функціональні вимоги замовника - UML-діаграми</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">3. Проектування ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '10')">3.1. Проектування структури ПЗ  - UML-діаграма класів</a>
-      
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">4. Кодування (програмування)</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '11')"> 4.1. Файлова структура проекту</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '12')">4.2. Специфікації методів у вигляді таблиці з переліком сигнатури методів, семантики методів та їх параметрів</a>
-               		</div>
-                </div>
-                <div class="dropdown">
-                	<a class="menu-item flex">5. Впровадження та супроводження ПЗ</a>
-               	 	<div class="submenu">
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '1')">5.1. Папка з проектом</a>
-                		<a class="submenu-item flex" onclick="ChangeTab(this, '2')">5.2. Запуск ехе-файла</a>
-               		</div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Something strange</title>
+    <link rel="stylesheet" type="text/css" href="../src/colors.css" />
+    <link rel="stylesheet" type="text/css" href="../src/root.css" />
+    <script type="text/javascript" src="../src/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h2>Звіти з лабораторних робіт</h2>
+        <h2>
+          з дисципліни
+          <span class="title">Технології .Net розробки веб-додатків</span>
+        </h2>
+        <h2>студентки групи ІТ-81 Тищенко Ірини Володимирівни</h2>
+      </div>
+      <div class="topbar flex horizontal-alignment">
+        <a class="topbar-item shadow" href="../index.html">Title</a>
+        <a class="topbar-item shadow" href="1.html">Lab 1</a>
+        <a class="topbar-item shadow" href="2.html">Lab 2</a>
+        <a class="topbar-item shadow" href="3.html">Lab 3</a>
+        <a class="topbar-item shadow" href="4.html">Lab 4</a>
+        <a class="topbar-item shadow" href="5.html">Lab 5</a>
+        <a class="topbar-item shadow" href="6.html">Lab 6</a>
+        <a class="topbar-item shadow active" href="7.html">Lab 7</a>
+        <a class="topbar-item shadow" href="8.html">Lab 8</a>
+        <a class="topbar-item shadow" href="9.html">Lab 9</a>
+      </div>
+      <div class="main">
+        <div id="menu">
+          <div class="dropdown">
+            <a class="menu-item flex" onclick="ChangeTab(this, '1')"
+              >1 Тема, мета та постановка задачі лабораторної роботи №6.</a
+            >
+          </div>
+          <div class="dropdown">
+            <a class="menu-item flex" onclick="ChangeTab(this, '2')"
+              >2 Місце розташування проекту.Середовище розробки</a
+            >
+          </div>
+
+          <div class="dropdown">
+            <a class="menu-item flex">3. Кодування ПЗ (програмування) </a>
+            <div class="submenu">
+              <a class="submenu-item flex" onclick="ChangeTab(this, '3')"
+                >3.1 Некоректна авторизація</a
+              >
+              <a class="submenu-item flex" onclick="ChangeTab(this, '4')"
+                >3.2 Фільтри виключень</a
+              >
+              <a class="submenu-item flex" onclick="ChangeTab(this, '5')"
+                >3.3 Виключення при обробці масивів</a
+              >
+              <a class="submenu-item flex" onclick="ChangeTab(this, '6')"
+                >3.4 Системні виключення</a
+              >
+              <a class="submenu-item flex" onclick="ChangeTab(this,'7')"
+                >3.5 Власні виключення</a
+              >
             </div>
-    
-            <div id="content">
-                <div id="1" class="active-item">
-                    <p>Опис предметного середовища</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse omnis officia illum, expedita
-                        velit odit quasi dolore doloribus facilis consequatur quam exercitationem nisi placeat voluptatibus 
-                        molestiae architecto? Ex eius saepe magnam laudantium animi distinctio optio error earum maiores 
-                        quidem quae suscipit quod et deleniti sequi debitis, sint veniam iure hic. Vero, facere nulla 
-                        cupiditate id distinctio impedit. Assumenda dignissimos explicabo amet deserunt asperiores aut 
-                        sapiente dicta adipisci quo mollitia ut quidem recusandae minima accusantium reiciendis illo, sit 
-                        nobis corporis id animi eum ex ducimus! Dolores repellat, ad ut velit sequi maxime odit animi quaerat
-                        impedit praesentium ex repellendus perspiciatis incidunt accusantium dolorem quod odio error illum tenetur ab 
-                        adipisci soluta laboriosam! A sunt quaerat, libero ipsa cumque vel modi minus accusantium sed, fugiat, 
-                        assumenda sint? Quis quaerat eveniet soluta obcaecati vitae! Dolore blanditiis illum explicabo obcaecati
-                        incidunt quia porro. Doloremque nulla sint saepe iste, tenetur odit at eveniet molestiae. 
-                        </p>
-                    <img src="4.jpg"/>
-                </div>
-                <div id="2" class="item">Загальна постановка задачі програми</div>
-                <div id="3" class="item">Постановка задачі лабораторної роботи №1</div>
-                <div id="4" class="item">Структура документа</div>
-                <div id="5" class="item">Висновок</div>
+          </div>
+
+          <div class="dropdown">
+            <a class="menu-item flex">4. Впровадження та супроводження ПЗ</a>
+            <div class="submenu">
+              <a class="submenu-item flex" onclick="ChangeTab(this, '8')"
+                >4.1. Папка з проектом</a
+              >
+              <a class="submenu-item flex" onclick="ChangeTab(this, '9')"
+                >4.2. Запуск ехе-файла</a
+              >
             </div>
+          </div>
+          <div class="dropdown">
+            <a class="menu-item flex" onclick="ChangeTab(this, '10')"
+              >5 Висновки</a
+            >
+          </div>
         </div>
-		<div class="footer"></div>
-	</div>
+
+        <div id="content">
+          <div id="1" class="active-item">
+            <p>
+              <b>Тема: ВИКЛЮЧНІ СИТУАЦІЇ. </b>
+            </p>
+            <b>Мета</b>
+            <span style="font-weight: 400"
+              >: придбати практичні навички роботи з виключними ситуаціями, які
+              виникають при роботі програми.
+            </span>
+            <b>Постановка задачі:</b>
+            <ul>
+              До програмного коду попередн іх лабораторних робіт добавити та
+              описати:
+              <li>
+                виключення, яке можуть виникати при некоректній авторизації;
+              </li>
+              <li>виключення, з застосуванянм фільтрів виключення;</li>
+              <li>виключення, які виникають при обробці масивів ;</li>
+              <li>системні виключення;</li>
+              <li>власні виключення;</li>
+              <li>протестувати програму. Зробити висновки</li>
+            </ul>
+            <hr />
+          </div>
+          <div id="2" class="item">
+            <head>
+              Місце розташування проекту.Середовище розробки
+            </head>
+            <p>Місце розташування проекту.</p>
+            <a href="https://github.com/FairyFox5700/Net_2021" />
+            <p>Середовище розробки : Rider</p>
+          </div>
+
+          <div id="3" class="item">
+            <head>
+              3.1 Некоректна авторизація
+            </head>
+            <h2>Клас для логіки делегата</h2>
+            <img
+              src="../src/img/lab7_auth_part1.png"
+              width="80%"
+              height="80%"
+            />
+            <img
+              src="../src/img/lab7_auth_part2.png"
+              width="80%"
+              height="80%"
+            />
+            <img
+              src="../src/img/lab7_auth_part3.png"
+              width="80%"
+              height="80%"
+            />
+            <img
+              src="../src/img/lab7_auth_part4.png"
+              width="80%"
+              height="80%"
+            />
+            <img
+              src="../src/img/lab7_auth_part5.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>
+              Приклад з генерацією помилки авторизації при введенні невалідних
+              логіну та паролю
+            </h3>
+            <img
+              src="../src/img/lab7_auth_error_ex.png"
+              width="80%"
+              height="80%"
+            />
+          </div>
+
+          <div id="4" class="item">
+            <head>
+              3.2 Фільтри виключень
+            </head>
+            <h3>Виключення при діленні</h3>
+            <img
+              src="../src/img/lab7_exception_filters.png"
+              width="80%"
+              height="80%"
+            />
+          </div>
+
+          <div id="5" class="item">
+            <head>
+              3.3 Виключення при обробці масивів
+            </head>
+            <img
+              src="../src/img/lab7_array2d_generation.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка помилок</h3>
+            <img
+              src="../src/img/lab7_array2D_nested_handling.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Вивід на консоль при обробцік</h3>
+            <img
+              src="../src/img/lab7_array2d_output.png"
+              width="80%"
+              height="80%"
+            />
+          </div>
+          <div id="6" class="item">
+            <head>
+              3.4 Системні виключення
+            </head>
+            <h3>InvalidCastException</h3>
+            <img
+              src="../src/img/lab7_generate_invalid_cast_exception.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>InvalidCastException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_generate_invalid_cast_exception_output.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка InvalidCastException</h3>
+            <img
+              src="../src/img/lab7_handle_invelid_cast_exception.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка InvalidCastException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_handle_invelid_cast_exception_output.png"
+              width="80%"
+              height="80%"
+            />
+            <br />
+            <br />
+            <br />
+            <h3>ArgumentException,</h3>
+            <img
+              src="../src/img/lab7_argExceptionGen.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>ArgumentException,вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_argExceptionGenOutput.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка ArgumentException,</h3>
+            <img
+              src="../src/img/lab7_gen_ArgExHandling.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка ArgumentException, вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_argExceptionHandlingOutput.png"
+              width="80%"
+              height="80%"
+            />
+            <br />
+            <br />
+            <br />
+            <h3>NullReferenceException</h3>
+            <img
+              src="../src/img/lab7_NRE_generation.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>NullReferenceException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_NRE_withoutHandlingOutput.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка NullReferenceException</h3>
+            <img
+              src="../src/img/lab7_NREHandling.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка NullReferenceException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_NREHandlingOutput.png"
+              width="80%"
+              height="80%"
+            />
+            <br />
+            <br />
+            <br />
+            <h3>АrgumentOutOfRangeException</h3>
+            <img
+              src="../src/img/lab7_printArgumentOutOfRange.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>АrgumentOutOfRangeException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_printArgumentOutOfRangeOutput.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка АrgumentOutOfRangeException</h3>
+            <img
+              src="../src/img/lab7_printArgumentOutOfRangeHandling.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Обробка АrgumentOutOfRangeException вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_printArgumentOutOfRangeHandlingOutput.png"
+              width="80%"
+              height="80%"
+            />
+          </div>
+          <div id="7" class="item">
+            <head>
+              3.5 Власні виключення
+            </head>
+            <img src="../src/img/lab7_own_ex.png" width="80%" height="80%" />
+            <h3>Класи виключень</h3>
+            <img
+              src="../src/img/lab7_invalid_footballer_ex.png"
+              width="80%"
+              height="80%"
+            />
+            <img
+              src="../src/img/lab7_footballer_exception_weight.png"
+              width="80%"
+              height="80%"
+            />
+            <h3>Приклад використання</h3>
+            <img src="../src/img/lab7_own_ex1.png" width="80%" height="80%" />
+            <h3>Вивід на консоль</h3>
+            <img
+              src="../src/img/lab7_exception_own.png"
+              width="80%"
+              height="80%"
+            />
+          </div>
+
+          <div id="8">
+            <a
+              href="https://drive.google.com/file/d/1tsKHjyBlvUbZEKX2MfLsTZMEXySVDsJp/view?usp=sharing"
+              >Файл проекту</a
+            >
+          </div>
+          <div id="9" class="item">
+            <a
+              href="https://drive.google.com/file/d/1BBKXhB-yDHB2sg2oZd91u-xQ7I74aYJh/view?usp=sharing"
+              >EXE файл</a
+            >
+          </div>
+          <div id="10" class="item">
+            Висновок: в ході виконання даної лаборатоної роботи я придбала
+            практичні навички роботи зі створенням виключень і їх обробкою.
+            <p>
+              Функції обробки виключень в мові C # допомагають вам впоратися з
+              непередбаченими чи виключними проблемами, які виникають при
+              виконанні програми. Вони дозволяють обробляти помилки так, як
+              здається розумним, а також правильно вивільняти ресурси. При
+              обробці виключень використовуються ключові слова try, catch і
+              finally для дій, які можуть виявитися невдалими.
+            </p>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+  </body>
 </html>
