@@ -53,6 +53,126 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/src/Identity/TimeTracking.Identity.BL.Impl/Services/UserIdentityService.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/src/ReportGenerator/TimeTracking.ReportGenerator.WebApi/Startup.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/src/TimeTracking.IocContainer/IocContainerServiceProviderFabric.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/src/TimeTracking.IocContainer/ScopedIocContainer.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/src/TimeTracking/TimeTracking.Dal.Impl/Migrations/20210330204756_InitialSchema.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/test/TimeTracking.IntegrationTests/CustomWebApplicationFactory.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/test/TimeTracking.IntegrationTests/Helpers/CustomWebApplicationFactory.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../../TRPZLabs/TimeTrackingWebApp/test/TimeTracking.IntegrationTests/Helpers/SeedData.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../AuthTestIdentityServer/Properties/launchSettings.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../AuthTestIdentityServer/Quickstart/Account/AccountController.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../AuthTestIdentityServer/Quickstart/Exceptions/UserLoginFailureExceptions.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/Array2D.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/CustomExceptions.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/ExceptionFilters.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/GeneratedExceptions.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/InvalidFootballerAgeException.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/InvalidFootballerHeightException.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/InvalidFootballerNameException.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Exceptions/InvalidFootballerWeightException.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/FootballerGreeting.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/FootballerSalary.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/FootballerSummary.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Keyboard.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/FootballersTeam.ConsoleClient/Program.cs">
           <value>
             <set />
@@ -294,6 +414,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/FootballersTeam.MvcClient/Views/Workbook/GenerateFromDataSet.cshtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ThreadTestApp/Program.cs">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ThreadTestApp/fish.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Курс_3/БД/Курсач/FootballProject/FootballProject/ClinetApp/react-app/src/containers/clubs/clubsDetails.jsx">
           <value>
             <set />
           </value>

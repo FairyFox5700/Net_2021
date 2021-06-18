@@ -29,7 +29,7 @@ namespace FootballProject.Entities
         public int? RoleId => _roleId;
 
         public Role Role { get; set; }
-        public ICollection<FootballResults> FootballResults { get; set; }
+        private ICollection<FootballResults> FootballResults { get; set; }
 
         public Footballer()
         {
@@ -52,6 +52,8 @@ namespace FootballProject.Entities
         {
 
         }
+        
+  
 
         public override string ToString() => GetType().Name;
 

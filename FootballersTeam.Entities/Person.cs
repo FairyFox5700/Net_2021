@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FootballProject.Entities
 {
-    public abstract class Person
+    public  class Person
     {
         private readonly int _personId;
         private readonly string _firstName;
@@ -28,10 +28,9 @@ namespace FootballProject.Entities
 
         protected Person()
         {
-
+            
         }
-
-        protected Person(int personId, string firstName, string middleName, string nationality, DateTime dataOfBirth, string placeOfBirth)
+        public Person(int personId, string firstName, string middleName, string nationality, DateTime dataOfBirth, string placeOfBirth)
         {
             _personId = personId;
             _firstName = firstName;

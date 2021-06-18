@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.MvcClient",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballersTeam.WebApi", "FootballersTeam.WebApi\FootballersTeam.WebApi.csproj", "{1AA06042-1194-4015-A25B-16EE0FF82AF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTestApp", "ThreadTestApp\ThreadTestApp.csproj", "{77ED59E5-C8D7-4DC2-A0D7-D54B772F0449}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA06042-1194-4015-A25B-16EE0FF82AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77ED59E5-C8D7-4DC2-A0D7-D54B772F0449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ED59E5-C8D7-4DC2-A0D7-D54B772F0449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ED59E5-C8D7-4DC2-A0D7-D54B772F0449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ED59E5-C8D7-4DC2-A0D7-D54B772F0449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
